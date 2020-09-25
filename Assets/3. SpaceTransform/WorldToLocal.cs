@@ -6,7 +6,7 @@ namespace FG
     {
         public Vector2 worldPosition;
         public Transform obj;
-        public Vector2 localPosition;
+        private Vector2 localPosition;
 
         private void OnDrawGizmos()
         {
