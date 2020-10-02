@@ -182,6 +182,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c0a3d037dcdd6340891662881171c69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gizmoVisible: 1
+  pointVisible: 0
+  pointColor: {r: 1, g: 1, b: 1, a: 1}
+  pointRadius: 0.1
 --- !u!1 &573066414
 GameObject:
   m_ObjectHideFlags: 0
