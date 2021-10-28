@@ -27,8 +27,7 @@ namespace FG
 
                     Vector3 normal = hitInfo.normal;
 
-                    float projectedVectorOnNormal = Vector3.Dot(direction, normal);
-                    direction -= (projectedVectorOnNormal * normal).normalized;
+                    direction = Reflect(direction, normal);
                 }
             }
         }
@@ -51,6 +50,13 @@ namespace FG
             }
 
             return hit;
+        }
+
+        private Vector3 Reflect(Vector3 direction, Vector3 normal)
+        {
+            float projectedVectorOnNormal = Vector3.Dot(direction, normal);
+            direction -= (projectedVectorOnNormal * normal).normalized;
+            return direction;
         }
     }
 }
